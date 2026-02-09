@@ -1,0 +1,38 @@
+package variableTask;
+
+public class VariableTask02 {
+	public static void main(String[] args) {
+//      5, 7845.15, false, B, 85.10F, 자바, S, 98590, D, true, 공백문자
+//      저장공간 2개만 사용해서 모든 값을 출력하기
+//      datas, numbers
+		int a = 0;
+		float b = 0.0F;
+		boolean c = false;
+		char d = ' ';
+		float e = 0.0F;
+		String f = null;
+		char g = ' ';
+		int h = 0;
+		char i = ' ';
+		boolean j = false;
+		String k = null;
+		float numbers = 0.0F;
+		String datas = null;
+		
+		a = 5;
+		b = 7845.15F;
+		c = false;
+		d = 'B';
+		e = 85.10F;
+		f = "자바";
+		g = 'S';
+		h = 98590;
+		i = 'D';
+		j = true;
+		k = "";
+			
+		numbers = a, b, e;
+		
+		
+	}
+}

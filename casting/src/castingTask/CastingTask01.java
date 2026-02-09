@@ -1,0 +1,32 @@
+package castingTask;
+
+public class CastingTask01 {
+	public static void main(String[] args) {
+//		6.37, 3.99, 3
+//		3개의 값을 연산하여 3을 만들기
+		
+//		int num_1 = 0, num_2 = 0, num_3 = 0;
+//		double num_4 = 0.0, num_5 = 0.0;
+//		
+//		num_1 = (int)6.37;
+//		num_2 = (int)3.99;
+//		num_3 = 3;
+//		num_4 = 6.37;
+//		num_5 = 3.99;
+//		
+//		
+//		System.out.println((num_1 + num_2) / num_3);
+//		System.out.println((int)(num_4/num_3 + num_5 / num_3));
+//		System.out.println((num_1+num_3)/num_2);
+//		System.out.println(3*(num_2+num_3)/num_1);	
+//		System.out.println((int)(3 * (num_3/num_4+num_5/num_4)));
+		
+		double num1 = 6.37, num2 = 3.99;
+	      int num3 = 3, numResult = 0;
+	      String result = "(int)(%.2f + %.2f) / %d = %d";
+	      
+	      numResult = (int)(num1 + num2) / num3;
+	      System.out.printf(result, num1, num2, num3, numResult);
+		
+	}
+}
