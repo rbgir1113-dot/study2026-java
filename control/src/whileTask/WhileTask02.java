@@ -17,26 +17,51 @@ import java.util.Scanner;
 // 입력값: 10, 50, 30, -20, 10, 20
 public class WhileTask02 {
    public static void main(String[] args) {
-      Scanner sc = new Scanner(System.in);
-      String message = "정수 값을 입력하세요\n누적 합이 100이상 되면 종료된다.",
-    		  inputValues = "" ;
-      int inputValue = 0, totalValue = 0;
-      while(true) {
-    	  System.out.println(message);
-    	  inputValue = sc.nextInt();
-    	  totalValue += inputValue;
-    	  System.out.println(totalValue);
-    	  if(inputValues.equals("")) {
-    		  inputValues = "" + inputValue;
-    	  }else {
-    		  inputValues = inputValues + " , " + inputValue;
-    	  }
-    	  if(totalValue >= 100) {
-    		  System.out.println("누적합 100이상이므로 프로그램 종료");
-    		  break;
-    	  }
-      }
-      System.out.println("입력한 값 : " + inputValues);
-      System.out.println("총 결과 값 : " + totalValue);
+//      Scanner sc = new Scanner(System.in);
+//      String message = "정수 값을 입력하세요\n누적 합이 100이상 되면 종료된다.",
+//    		  inputValues = "" ;
+//      
+//      int inputValue = 0, totalValue = 0;
+//      
+//      while(true) {
+//    	  System.out.println(message);
+//    	  inputValue = sc.nextInt();
+//    	  totalValue += inputValue;
+//    	  System.out.println(totalValue);
+//    	  if(inputValues.equals("")) {
+//    		  inputValues = "" + inputValue;
+//    	  }else {
+//    		  inputValues += ", " + inputValue;
+//    	  }
+//    	  if(totalValue >= 100) {
+//    		  System.out.println("누적합 100이상이므로 프로그램 종료");
+//    		  break;
+//    	  }
+//      }
+//      
+//      System.out.println("입력한 값 : " + inputValues);
+//      System.out.println("총 결과 값 : " + totalValue);
+//      
+
+	   Scanner sc = new Scanner(System.in);
+	      String message = "정수를 입력하세요\n10", 
+	            expression = null, prev = "", result = "";
+	      int total = 0, count = 0;
+	      
+	      while(true) {
+	         count++;
+	         System.out.println(message);
+	         expression = sc.next();
+	         total += Integer.parseInt(expression);
+	         
+	         result = count == 1 ? String.valueOf(Integer.parseInt(expression)) : prev + ", " + String.valueOf(Integer.parseInt(expression));
+	         prev = result;
+	         
+	         if(total >= 100) {
+	            System.out.println(total);
+	            System.out.println(result);
+	            break;
+	         }
+	      }
    }
 }
