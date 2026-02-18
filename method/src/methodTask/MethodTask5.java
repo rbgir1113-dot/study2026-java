@@ -4,26 +4,47 @@ import java.util.Scanner;
 
 public class MethodTask5 {
 //      1. 두 정수를 전달하면 몫과 나머지를 배열로 전달하는 메서드
-	void quotientn(int[] arrData) {
-		
-	};
+//	int[] divide(int dividend, int divisor) {
+//        if (divisor == 0) {
+//            System.out.println("0으로 나눌수 없습니다.");
+//        }
+//        
+//        int quotient = dividend / divisor; 
+//        int remainder = dividend % divisor; 
+//
+//        return new int[]{quotient, remainder};
+//	}	
 	
-	void remainder() {};
+	
+	String integerValue(String inputText) {
+		if (inputText == null) {
+            return "";
+        }
+
+        String result = "";
+        for (int i = 0; i < inputText.length(); i++) {
+            char ch = inputText.charAt(i);
+
+            if (ch >= '0' && ch <= '9') {
+                result += ch; 
+            }
+        }
+        return result;
+    }
 
 
-	
-	
-	
 	
 	
 	
    public static void main(String[] args) {
+	   MethodTask5 mt5 = new MethodTask5();
 	   Scanner sc = new Scanner(System.in);
-	   int[] arrData = new int[2];
-	   int inputNum = 0;
-	   for(int i =0; i< arrData.length; i++) {
-		   arrData[i] += sc.nextInt();
-	   }
+//	   System.out.println("정수 두개를 입력하세요.");
+//	   int value1 = sc.nextInt();
+//	   int value2 = sc.nextInt();
+//	   int[] result = mt5.divide(value1, value2);
+//       System.out.println("몫: " + result[0]);
+//       System.out.println("나머지: " + result[1]);
 	   
 	   
 //      2. 사용자가 입력하는 값중 정수 분리하기
@@ -32,10 +53,13 @@ public class MethodTask5 {
 //      출력 예시)
 //      1234
 	   String[] value = null;
-	   String inputText = "", message = "글자 사이에 숫자를 찾아서 숫자만 작성합니다.";
-	   
+	   String inputText = "", message = "글자 사이에 숫자를 찾아서 숫자만 작성합니다.\nex)안1녕2하3세4요 -> 1234";
+	   System.out.println(message);
 	   inputText = sc.next();
-	   
+	   String result = mt5.integerValue(inputText);
+
+       System.out.println("입력: " + inputText);
+       System.out.println("숫자만 추출: " + result);
 	   
 	   
 //      3. 사용자가 입력한 글자와 찾을 글자를 입력하면 글자의 개수를 반환해주는 메서드
