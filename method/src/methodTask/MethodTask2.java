@@ -55,35 +55,53 @@ public class MethodTask2 {
 	   }
 	
 //		3.
-//	void minMax(int[] data) {
-//	    for (int num : data) {
-//	    	
-//	    }
+//	int[] getMinAndMax(int[] datas) {
+//	int[] result = new int[2];
+//	int min = datas[0], max = datas[0];
+//	for(int data: datas) {
+//		if(min > data) { min = data; };
+//		if(max < data) { max = data; };
 //	}
+//	
+//	result[0] = min;
+//	result[1] = max;
+//	return result;
+//}
+
 	
 	
 	
    public static void main(String[] args) {
 
 //      1. 글자 하나를 전달하면 글자가 대문자인지, 소문자인지, 일반문자인지 알려주는 메서드
-	   MethodTask2 mt = new MethodTask2();
+	   MethodTask2 mt2 = new MethodTask2();
 //	   mt.determine('A');
 	   
 //      2. 두 정수를 더하면 사칙연산의 결과를 반환해주는 메서드(+, -, /, *)
-//	   int add = mt.add(10,20);
-//	   int diff = mt.diff(10,20);
-//	   double devide = mt.devide(10,20);
-//	   int multiple = mt.multiple(10,20);
+//	   int add = mt2.add(10,20);
+//	   int diff = mt2.diff(10,20);
+//	   double devide = mt2.devide(10,20);
+//	   int multiple = mt2.multiple(10,20);
 //	   
 //	   System.out.println(add);
 //	   System.out.println(diff);
 //	   System.out.printf("%.2f\n",devide);
 //	   System.out.println(multiple);
 	   
+//	   System.out.println(mt2.checkChar('ㅁ'));
+//		
+//		int[] result2 = mt2.calc(10, 20);
+//		for(int result : result2) {
+//			System.out.println(result);
+//		}
 
 	   
 //      3. 5개의 정수를 전달하면 가장 큰 값과 작은 값을 알려주는 메서드
-	   
+//	   int[] datas = {10, 20, 30, 40, 50};
+//		int[] result3 = mt2.getMinAndMax(datas);
+//		for(int result: result3) {
+//			System.out.println(result);
+//		}
 	   
 	   
    }
