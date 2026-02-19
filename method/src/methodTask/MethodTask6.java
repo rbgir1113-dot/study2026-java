@@ -1,6 +1,47 @@
 package methodTask;
 
+import java.util.Scanner;
+
 public class MethodTask6 {
+   
+   String convertNumber(int number) {
+      String result = "";
+      
+      if(number < 1 || number > 1000000) {
+         return "입력값 범위 초과";
+      }
+      
+      int man = 0, thousand = 0, hundred = 0, ten = 0, one = 0;
+      
+      man = number / 10000;
+      thousand = (number % 10000) / 1000;
+      hundred = (number % 1000) / 100;
+      ten = (number % 100) / 10;
+      one = number % 10;
+      
+      if(man > 0) {
+         result += man + "만";
+      }
+
+      if(thousand > 0) {
+         result += thousand + "천";
+      }
+      
+      if(hundred > 0) {
+         result += hundred + "백";
+      }
+      
+      if(ten > 0) {
+         result += ten + "십";
+      }
+      
+      if(one > 0) {
+         result += one;
+      }
+      
+      return result;
+   }
+   
    public static void main(String[] args) {
       
 //      사용자의 입력값은 1 ~ 1000000까지 입력
@@ -15,6 +56,23 @@ public class MethodTask6 {
 //      173200
 //      출력 예시
 //      17만3천2백
+      Scanner sc = new Scanner(System.in);
+      String message = "숫자를 입력하세요";
+      System.out.println(message);
+      int number = sc.nextInt();
+      MethodTask6 mt6 = new MethodTask6();
+      System.out.println(mt6.convertNumber(number));
+      
       
    }
 }
+
+
+
+
+
+
+
+
+
+
