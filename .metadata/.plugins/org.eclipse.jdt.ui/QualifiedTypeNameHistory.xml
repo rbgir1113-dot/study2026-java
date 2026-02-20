@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.awt.peer.SystemTrayPeer"/>
     <fullyQualifiedTypeName name="methodTask.MethodTask2"/>
     <fullyQualifiedTypeName name="methodTask.MethodTask5"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="classTask.PlayerB"/>
+    <fullyQualifiedTypeName name="java.awt.peer.SystemTrayPeer"/>
+    <fullyQualifiedTypeName name="inheritanceTask.EmployeeTask"/>
 </qualifiedTypeNameHistroy>
