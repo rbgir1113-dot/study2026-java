@@ -7,4 +7,13 @@
     <fullyQualifiedTypeName name="classTask.PlayerB"/>
     <fullyQualifiedTypeName name="java.awt.peer.SystemTrayPeer"/>
     <fullyQualifiedTypeName name="inheritanceTask.EmployeeTask"/>
+    <fullyQualifiedTypeName name="java.security.DomainCombiner"/>
+    <fullyQualifiedTypeName name="classTask2.Character"/>
+    <fullyQualifiedTypeName name="classTask3.Harbivore"/>
+    <fullyQualifiedTypeName name="classTask4.Product"/>
+    <fullyQualifiedTypeName name="abstractTest.Electronics"/>
+    <fullyQualifiedTypeName name="interfaceTest.PetAdapter"/>
+    <fullyQualifiedTypeName name="interfaceTask.Person"/>
+    <fullyQualifiedTypeName name="javax.management.remote.SubjectDelegationPermission"/>
+    <fullyQualifiedTypeName name="interfaceTask1.PersonAction"/>
 </qualifiedTypeNameHistroy>
