@@ -11,6 +11,5 @@ package interfaceTask1;
 
 public class InterfaceTask1 {
 	public static void main(String[] args) {
-//		Person person =
 	}
 }

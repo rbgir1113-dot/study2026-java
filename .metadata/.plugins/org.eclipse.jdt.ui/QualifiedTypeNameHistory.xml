@@ -16,4 +16,14 @@
     <fullyQualifiedTypeName name="interfaceTask.Person"/>
     <fullyQualifiedTypeName name="javax.management.remote.SubjectDelegationPermission"/>
     <fullyQualifiedTypeName name="interfaceTask1.PersonAction"/>
+    <fullyQualifiedTypeName name="interfaceTest2.HerbivoreMarker"/>
+    <fullyQualifiedTypeName name="interfaceTest2.CarnivoreMarker"/>
+    <fullyQualifiedTypeName name="innerClassTest.InnerClassTest.InnerClass"/>
+    <fullyQualifiedTypeName name="anonymousTest.Study"/>
+    <fullyQualifiedTypeName name="anonymousTask1.Starbucks"/>
+    <fullyQualifiedTypeName name="anonymousTask1.Form"/>
+    <fullyQualifiedTypeName name="anonymousTask1.EventMarker"/>
+    <fullyQualifiedTypeName name="lambdaTest.Calc"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
 </qualifiedTypeNameHistroy>
