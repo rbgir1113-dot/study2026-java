@@ -54,19 +54,30 @@ public class LambdaTask4 {
 //      {10, 9, 8, 7, 3, 0}
       
 	   OrderBy sort = (arr) -> {
-		   int value = arr[0];
 		   for(int i = 0; i< arr.length; i++) {
-			   if(value < arr[i]) { value = arr[i]; }
+			   int maxIndex = i;
+			   
+			   for(int j = i+1; j < arr.length; j++) {
+				   if(arr[j] > arr[maxIndex]) {
+					   maxIndex = j;
+				   }
+			   }
+			   int temp = arr[i];
+			   arr[i] = arr[maxIndex];
+			   arr[maxIndex] = temp;
+			   
 		   }
-		   return value;
+		   return arr;
 	   };
+	   
+	   
 	   int[] result = {10,3,7,8,9,0};
-	   for(int i = 0; i < result.length; i++) {
-		  System.out.println(sort.OrderBy(result[i]));
+	   
+	   result = sort.OrderBy(result);
+	   for(int number : result) {
+		   System.out.print(number + " ");
+		   
 	   }
-	   
-	   
-	   
 	   
 	   
 	   

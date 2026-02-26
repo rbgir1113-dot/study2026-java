@@ -7,7 +7,6 @@
     <fullyQualifiedTypeName name="classTask.PlayerB"/>
     <fullyQualifiedTypeName name="java.awt.peer.SystemTrayPeer"/>
     <fullyQualifiedTypeName name="inheritanceTask.EmployeeTask"/>
-    <fullyQualifiedTypeName name="java.security.DomainCombiner"/>
     <fullyQualifiedTypeName name="classTask2.Character"/>
     <fullyQualifiedTypeName name="classTask3.Harbivore"/>
     <fullyQualifiedTypeName name="classTask4.Product"/>
@@ -26,4 +25,9 @@
     <fullyQualifiedTypeName name="lambdaTest.Calc"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
+    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+    <fullyQualifiedTypeName name="apiTest.Calc"/>
+    <fullyQualifiedTypeName name="java.security.DomainCombiner"/>
+    <fullyQualifiedTypeName name="arrayListTest.DBConnecter"/>
+    <fullyQualifiedTypeName name="arrayList.task.UserField"/>
 </qualifiedTypeNameHistroy>
