@@ -6,6 +6,7 @@ public class UserField {
    
    public ArrayList<User> users = DBConnecter.users;
    public final int KEY = 300;
+   public static String session;
    
 //   1. 회원가입
 //   - name, password, phone  
@@ -54,16 +55,61 @@ public class UserField {
          System.out.println("비밀번호가 일치하지 않습니다");
          return null;
       }
-      
+      session = userInDB.getId();
       return userInDB;
    }
    
 //   3. 로그아웃
+   public void logout() {
+	   session = null;
+   }
+   
+   
 //   4. 회원탈퇴
+   public void withdraw() {
+	   User removeUser = null;
+	   for(User userInDB : users) {
+		   if(userInDB.getId().equals(session)) {
+			   removeUser = userInDB;
+		   }
+	   }
+	   System.out.println("회원 탈퇴 완료!");
+	   users.remove(removeUser);
+   }
+   
+   
+   
 //   5. 비밀번호 변경(마이페이지)
-//   6. 비밀번호 변경(비밀번호 변경 30일)
+   public void updatePw(User user) {
+	   User userInDB = checkId(user.getId()); // DB에 있는 id
+	   if(userInDB != null) {
+		   userInDB.setPassword(encode(user.getPassword()));
+		   
+		   }
+		   
+	   }
+   
+   
+   
+   //   6. 비밀번호 변경(비밀번호 변경 30일)
+   public boolean update(String password, String newPassword) {
+	      User foundUser = checkId(session);
+	      if(foundUser.getPassword().equals(password)) {
+	         foundUser.setPassword(encode(newPassword));
+	         return true;
+	      }
+	      return false;
+	   }   
+   
+   
+   
+
+   
 //   7. 인증번호 전송
 //   8. 인증번호 확인
+
+   
+   
    public static void main(String[] args) {
       UserField uf = new UserField();
       User user1 = new User("hong123", "홍길동", "1234", "010-1234-1234");
@@ -74,7 +120,12 @@ public class UserField {
 //      System.out.println(uf.users);
       
       User currentUser = uf.login(new User("hong123", "홍길동", "1234", "010-1234-1234"));
-      System.out.println(currentUser);
+      
+      
+      System.out.println(uf.users);
+//      uf.withdraw();
+      uf.updatePw(new User("hong123", "홍길동", "12345678", "010-1234-1234"));
+      System.out.println(uf.users);
       
    }
 }

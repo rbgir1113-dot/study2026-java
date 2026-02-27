@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class User {
 //	ex)
-//	id : test123@gmail.con
+//	id : test123@gmail.com
 	private String id;
 	private String name;
 	private String password;
