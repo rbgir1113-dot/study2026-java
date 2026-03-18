@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="interfaceTask.Person"/>
-    <fullyQualifiedTypeName name="javax.management.remote.SubjectDelegationPermission"/>
-    <fullyQualifiedTypeName name="interfaceTask1.PersonAction"/>
     <fullyQualifiedTypeName name="interfaceTest2.HerbivoreMarker"/>
     <fullyQualifiedTypeName name="interfaceTest2.CarnivoreMarker"/>
     <fullyQualifiedTypeName name="innerClassTest.InnerClassTest.InnerClass"/>
@@ -32,7 +29,6 @@
     <fullyQualifiedTypeName name="java.util.Optional"/>
     <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
     <fullyQualifiedTypeName name="optionalTest.NoSearchUserException"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.util.Calendar"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
@@ -60,4 +56,8 @@
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
     <fullyQualifiedTypeName name="chatting.ClientThread"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="dao.DBConnecter"/>
 </qualifiedTypeNameHistroy>
